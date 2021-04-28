@@ -4,6 +4,152 @@
 @import 'global';
 @import 'libs';
 
-
+.header{
+   background-color: #b10000;
+   padding: 60px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    max-width: 200px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  &__phone{
+    @extend %rubik-500;
+   font-size: 36px;
+   color: #fff;
+  }
+}
+.main{
+   background-color: #b10000;
+}
+.content{
+  &__title{
+    @extend %rubik-500;
+    font-size: 56px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    text-align: center;
+     animation-delay: 0.3s;
+  }
+  &__title-box{
+    max-width: 860px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url('../images/grup.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__subtitle{
+    @extend %quicksand-400;
+    font-style: italic;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+     animation-delay: 0.3s;
+  }
+  &__text{
+    padding: 20px;
+    @extend %rubik-500;
+    line-height: 32px;
+    font-size: 24px;
+    color: #fff;
+    max-width: 720px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #ba1c1c;
+    border-radius: 20px;
+    animation-duration: 1.8s;
+    animation-delay: 1s;
+  }
+  &__img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      width: 120px;
+      height: 120px;
+      background-image: url('../images/borger2.png');
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      right: 200px;
+      top: 0;
+      width: 80px;
+      height: 120px;
+      background-image: url('../images/cup2.png');
+    }
+  }
+}
+.bike-img,
+.lines-img{
+  display: inline-block;
+  max-width: 400px;
+}
+.lines-img{
+  animation-duration: 1.8s;
+  animation-delay: 0.3s;
+}
+.bike-img{
+  padding-top: 30px;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+ 
+}
+ .phone-link{
+   @extend %quicksand-500;
+     font-size: 24px;
+     color: #fff;
+  }
+.footer{
+  background-color: #facb03;
+  padding: 60px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    & + .footer__item{
+      margin-left: 30px;
+    }
+  }
+  &__link-site{
+    @extend %rubik-400;
+    font-size: 36px;
+    color: #ba1c1c;
+   }
+   &__item-facebook{
+     animation-duration: 1.5s;
+     animation-delay: 0.2s;
+     animation-iteration-count: infinite;
+   }
+   &__item-instagram{
+     animation-duration: 1.5s;
+     animation-delay: 0.4s;
+     animation-iteration-count: infinite;
+   }
+   &__item-twitter{
+     animation-duration: 1.5s;
+     animation-delay: 0.6s;
+     animation-iteration-count: infinite;
+   }
+   &__item-whatsapp{
+     animation-duration: 1.5s;
+     animation-delay: 0.8s;
+     animation-iteration-count: infinite;
+   }
+  }
 
 @import 'media';
